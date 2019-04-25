@@ -1,0 +1,489 @@
+{include file="common/head"/}
+
+        <!-- 中间内容 -->
+
+        <div class="centre-box content-box">
+
+            {include file="common/left"/}
+
+            <div class="right-box">
+
+                <h3 class="title-link"><a href="/">首页</a>><a href="/services-3.html">产品中心</a></h3>
+
+                <div class="cpzx-box">
+
+                    <div class="choose-title">
+
+                        已选条件：
+                        {volist name="str" id="vo" }
+                        <a href="{:url('home/index/product',array_merge($map,[$key=>0]))}"><span>{$vo}<img src="__HOME__/images/ganbi.png"></span></a>
+                        {/volist}
+                    </div>
+
+                    <table>
+
+                        <tr>
+
+                            <th>品牌</th>
+
+                            <th>蓝帝思</th>
+
+                        </tr>
+
+                        <tr>
+                            <th>色调</th>
+
+                            <th>
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['sd'=>1]):['sd'=>1])}">暖色</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['sd'=>2]):['sd'=>2])}">冷色</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>材质</th>
+
+
+                            <th>
+
+
+                                <span class="col-lan"><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>1]):['cz'=>1])}">柚木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>2]):['cz'=>2])}">胡桃木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>3]):['cz'=>3])}">枫木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>4]):['cz'=>4])}">水曲柳</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>5]):['cz'=>5])}">橡木</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+ 
+
+                        <tr>
+
+
+                            <th>花纹</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>1]):['hw'=>1])}">秋香</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>2]):['hw'=>2])}">铁刀</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>3]):['hw'=>3])}">斑马</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>4]):['hw'=>4])}">青藤</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>厚度</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>1]):['hd'=>1])}">3mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>2]):['hd'=>2])}">5mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>3]):['hd'=>3])}">9mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>4]):['hd'=>4])}">15mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>5]):['hd'=>5])}">18mm</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>工艺</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>1]):['gy'=>1])}">单面</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>2]):['gy'=>2])}">双面</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>3]):['gy'=>3])}">高光</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>4]):['gy'=>4])}">浮雕</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>5]):['gy'=>5])}">锯齿</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>6]):['gy'=>6])}">加长</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>7]):['gy'=>7])}">加宽</a></span>
+
+ 
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>尺寸</th> 
+
+
+                            <th>
+
+
+                                <span>木皮板尺寸：2440mm * 1220mm</span>
+
+
+                                <span>木皮仿步尺寸：2440mm * 610mm</span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                    </table>
+
+
+                </div>
+
+
+
+
+
+                <div class="display-box cpzx-display-box">
+
+
+                    <h4>产品中心<span>/</span><span>PRODOCT CENTER</span>
+
+
+
+
+
+                    </h4>
+
+
+
+
+
+                    <ul class="cpzx-list">
+
+
+                       {volist name="$list" id="v"}
+
+                       
+                        <li>
+                      
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">  <img src="__PUBLIC__{$v.thumb}">   </a>
+
+
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">  {$v.title}   </a>
+                   
+
+                        </li>
+                 
+                        {/volist}
+
+                    </ul>
+                </div>
+                {$page}
+            </div>
+        </div>
+{include file="common/footer1"/}
+    </div>
+
+    <div class="lds-phone-box">
+     {include file="common/head1"/}
+        <script>
+            var mySwiper = new Swiper('.home-banner', {
+                direction: 'horizontal', // 垂直切换选项
+                loop: false, // 循环模式选项
+                speed: 2000,
+                // autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false,
+                //     clickable: true,
+                // },
+                // 如果需要分页器
+                // pagination: {
+                //     el: '.swiper-pagination',
+                // },
+            })
+
+            $('#caidan').click(function () {
+                $('.hid').toggleClass('show');
+            })
+
+            $('#nav-but').click(function () {
+                $('.nav-list').toggleClass('show');
+            })
+        </script>
+
+        <!-- 内容 -->
+        <div class="conter-box cpzx-conter-box">
+
+            <div class="show-box cpxq-box">
+                <div class="cpzx-box">
+                         <div class="choose-title">
+  
+                        已选条件：
+
+                             {volist name="str" id="vo" }
+                             <a href="{:url('home/index/product',array_merge($map,[$key=>0]))}"><span>{$vo}<img src="__HOME__/images/ganbi.png"></span></a>
+                             {/volist}
+                    </div>
+
+                    <table>
+
+                        <tr>
+
+                            <th>品牌</th>
+
+                            <th>蓝帝思</th>
+
+                        </tr>
+
+                        <tr>
+                            <th>色调</th>
+
+                            <th>
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['sd'=>1]):['sd'=>1])}">暖色</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['sd'=>2]):['sd'=>2])}">冷色</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>材质</th>
+
+
+                            <th>
+
+
+                                <span class="col-lan"><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>1]):['cz'=>1])}">柚木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>2]):['cz'=>2])}">胡桃木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>3]):['cz'=>3])}">枫木</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>4]):['cz'=>4])}">水曲柳</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['cz'=>5]):['cz'=>5])}">橡木</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>花纹</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>1]):['hw'=>1])}">秋香</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>2]):['hw'=>2])}">铁刀</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>3]):['hw'=>3])}">斑马</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hw'=>4]):['hw'=>4])}">青藤</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>厚度</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>1]):['hd'=>1])}">3mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>2]):['hd'=>2])}">5mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>3]):['hd'=>3])}">9mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>4]):['hd'=>4])}">15mm</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['hd'=>5]):['hd'=>5])}">18mm</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>工艺</th>
+
+
+                            <th>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>1]):['gy'=>1])}">单面</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>2]):['gy'=>2])}">双面</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>3]):['gy'=>3])}">高光</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>4]):['gy'=>4])}">浮雕</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>5]):['gy'=>5])}">锯齿</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>6]):['gy'=>6])}">加长</a></span>
+
+
+                                <span><a href="{:url('home/index/product',isset($map)?array_merge($map,['gy'=>7]):['gy'=>7])}">加宽</a></span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                        <tr>
+
+
+                            <th>尺寸</th>
+
+
+                            <th>
+
+
+                                <span>木皮板尺寸：2440mm * 1220mm</span>
+
+
+                                <span>木皮仿步尺寸：2440mm * 610mm</span>
+
+
+                            </th>
+
+
+                        </tr>
+
+
+                    </table>
+
+
+                </div>
+            </div>
+
+            <div class="show-box alzx">
+                <h2>
+                    产品中心<span>/</span><span>PRODOCT CENTER</span>
+
+                    <!-- <p>更多》</p> -->
+                </h2>
+
+                <ul class="cpzx-list">
+                        {volist name="$list" id="v"}
+
+                       
+                        <li>
+                      
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">  <img src="__PUBLIC__{$v.thumb}">   </a>
+
+
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">  {$v.title}   </a>
+                   
+
+                        </li>
+                 
+                        {/volist}
+                </ul>
+            </div>
+            {$page}
+        </div>
+
+       {include file="common/footer"/}

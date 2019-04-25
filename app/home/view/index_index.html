@@ -1,0 +1,988 @@
+{include file="common/head"/}
+
+
+
+
+
+
+
+        <!-- 中间内容 -->
+
+
+
+        <div class="centre-box content-box">
+
+
+
+            <!-- 客服 -->
+
+
+
+            <div class="kefu-box">
+
+
+
+                <img src="__HOME__/images/shouye_24.png">
+
+
+
+            </div>
+
+
+
+            {include file="common/left"/}
+
+
+
+            <div class="right-box">
+
+
+
+                <h3 class="title-link"><a href="/">首页</a>><a href="/services-3.html">产品中心</a>></h3>
+
+
+
+
+
+
+
+                <div class="display-box">
+
+
+
+                    <h4>结构展示<span>/</span><span>STRUCTURE DISPLAY</span></h4>
+
+
+
+
+
+
+
+                    <div class="img-txt-box">
+
+
+
+                        <img class="mbjg-img" src="__HOME__/images/mbjg1_03.png" width="406px" height="242px" />
+
+
+
+
+
+
+
+                        <div>
+
+
+
+                            <h5>免漆木饰面产品剖析</h5>
+
+
+
+
+
+
+
+                            <span>贴面板是用径向刨切工艺制成人工薄皮，经过多道工艺贴合而成的装饰面板。</span>
+
+
+
+                            <p>性能特点：</p>
+
+
+
+                            <p>1.健康环保（免漆板材，无甲醛释放）</p>
+
+
+
+                            <p>2.抗菌耐磨（封闭涂层，有效绝缘，硬度高）</p>
+
+
+
+                            <p>3.耐候性强（优质漆面，不易褪色）</p>
+
+
+
+                            <p>4.不易焰灼（阻焰饰面，有效防焰）</p>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="display-box">
+
+
+
+                    <h4>新品展示<span>/</span><span>NEWS</span>
+
+
+
+                        <p><a href="">更多》</a></p>
+
+
+
+                    </h4>
+
+                    <ul class="xpzs">
+
+                       {volist name="$list" id="v"}
+
+                        <li>
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">
+           <img src="__PUBLIC__{$v.thumb}"> </a>
+                        <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">
+       
+                            {$v.title}
+                       
+                       </a>
+                        </li>
+
+                        {/volist}
+
+                      
+
+                    </ul>
+
+
+                </div>
+
+
+                <div class="display-box">
+
+
+                    <h4>案例中心<span>/</span><span>PROJECT CASE</span>
+
+
+                        <p><a href="">更多》</a></p>
+
+
+                    </h4>
+
+
+                    <p class="pitch-on"><span class="col-txt" id="gz">工装</span>|<span id="jz">家装</span></p>
+
+
+                    <ul id="gz-ul" class="alzx">
+
+         {volist name="$options" id="v"}
+                 <!--     <a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}">   -->
+                      	<li>
+                 <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">    <img src="__PUBLIC__{$v.pic}"></a>
+                    <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">  {$v.title}</a>
+
+                        </li>
+                        <!--</a>-->
+     {/volist}
+
+
+                    </ul>
+
+
+                    <ul id="jz-ul" class="alzx">
+
+
+
+                       
+         {volist name="$options" id="v"}
+
+                 <!--     <a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}">   -->
+                      	<li>
+                <img src="__PUBLIC__{$v.pic}">{$v.title}</a>
+
+                        </li>
+                        <!--</a>-->
+     {/volist}
+
+                    </ul>
+
+
+
+
+
+
+
+                    <script>
+
+
+
+                        $('#gz').click(function () {
+
+
+
+                            $('#gz').addClass('col-txt');
+
+
+
+                            $('#gz-ul').css('display', 'flex');
+
+
+
+
+
+
+
+                            $('#jz').removeClass('col-txt');
+
+
+
+                            $('#jz-ul').css('display', 'none');
+
+
+
+                        })
+
+
+
+
+
+
+
+                        $('#jz').click(function () {
+
+
+
+                            $('#jz').addClass('col-txt');
+
+
+
+                            $('#jz-ul').css('display', 'flex');
+
+
+
+
+
+
+
+                            $('#gz').removeClass('col-txt');
+
+
+
+                            $('#gz-ul').css('display', 'none');
+
+
+
+                        })
+
+
+
+                    </script>
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="gylc-box display-box content-box">
+
+
+
+            <h4>工艺流程<span>/</span><span>PROCESS FLOW</span></h4>
+
+
+
+
+
+
+
+            <div class="gylc">
+
+
+
+                <img src="__HOME__/images/shouye_54.png">
+
+
+
+
+
+
+
+                <div class="gylc-right">
+
+
+
+                    <h2>工艺流程</h2>
+
+
+
+                    <div class="hidd-box">
+
+
+
+                        <div class="gylc-scroll">
+
+
+
+                            <span>找线定位 → 核查预埋件与洞口 → 涂刷防腐、防潮涂料 → 龙骨配置与安装 → 安装成品木饰面板。</span>
+
+
+
+
+
+
+
+                            <p>1、找位与划线：木护墙、木筒子板安装前，应根据设计图要求，先找好标高、平面位置、竖向尺寸，进行弹线。</p>
+
+
+
+
+
+
+
+                            <p>2、核预埋件及洞口：弹线后检查预埋件、木砖是否符合设计及安装的需求，主要检查排列间距、尺寸、位置是否满足钉装龙骨的要求；量测门窗及其他洞口位置、尺寸是否方正垂直，与设计要求是否相符。
+
+
+
+                            </p>
+
+
+
+
+
+
+
+                            <p>3、涂刷防潮、防腐涂料：设计有防潮、防腐要求的木护墙、木筒子板，在钉装龙骨时应压铺防潮卷材，或在钉装龙骨前进行涂刷防潮、防腐的施工。</p>
+
+
+
+
+
+
+
+                            <p>4、龙骨的配置与安装...</p>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <div class="xwzx-box display-box content-box">
+
+
+
+            <h4>新闻中心<span>/</span><span>NEWS CENTER</span>
+
+
+
+                <p><a href="{:url('home/index/news_list')}">更多》</a></p>
+
+
+
+            </h4>
+
+
+
+
+
+
+
+            <ul class="new-list">
+
+         {volist name="$news" id="v"}
+             <li>
+
+
+                    <p>
+                    	
+                    	   <a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+                    	   	<img src="__HOME__/images/discover.png" />  </a>
+                    	   	<a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+                    	   		{$v.title}</a>
+
+
+                    </p>
+
+
+                    <span>{$v.createtime}</span>
+
+
+                </li>
+   
+     {/volist}
+
+               
+
+
+            </ul>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+{include file="common/footer1"/}
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="lds-phone-box">
+
+{include file="common/head1"/}
+
+
+
+        <script>
+
+
+
+            var mySwiper = new Swiper('.home-banner', {
+
+
+
+                direction: 'horizontal', // 垂直切换选项
+
+
+
+                loop: true, // 循环模式选项
+
+
+
+                speed: 2000,
+
+
+
+                autoplay: {
+
+
+
+                    delay: 3000,
+
+
+
+                    disableOnInteraction: false,
+
+
+
+                    clickable: true,
+
+
+
+                },
+
+
+
+                // 如果需要分页器
+
+
+
+                pagination: {
+
+
+
+                    el: '.swiper-pagination',
+
+
+
+                },
+
+
+
+            })
+
+
+
+
+
+
+
+            $('#caidan').click(function () {
+
+
+
+                $('.hid').toggleClass('show');
+
+
+
+            })
+
+
+
+
+
+
+
+            $('#nav-but').click(function () {
+
+
+
+                $('.nav-list').toggleClass('show');
+
+
+
+            })
+
+
+
+        </script>
+
+
+
+
+
+
+
+        <!-- 客服 -->
+
+
+        <div class="kefu-box">
+
+
+
+            <img src="__HOME__/images/shouye_24.png">
+
+
+
+        </div>
+
+
+        <!-- 内容 -->
+
+        <div class="conter-box">
+
+
+
+            <div class="show-box">
+
+
+
+                <h2>结构展示<span>/</span><span>STRUCTURE DISPLAY</span></h2>
+
+
+
+
+
+
+
+                <div class="show-img-txt">
+
+
+
+                    <img src="__HOME__/images/shouye_09.png">
+
+
+
+
+
+
+
+                    <h3>木饰面产品性能</h3>
+
+
+
+                    <p>1.健康环保，无甲醛</p>
+
+
+
+                    <p>2.抗拒耐磨，硬度高</p>
+
+
+
+                    <p>3.耐候性强，不褪色</p>
+
+
+
+                    <p>4.不易焰灼，超防焰</p>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="show-box">
+
+
+
+                <h2>
+
+
+
+                    新品展示<span>/</span><span>NEW PRODUCT</span>
+
+
+
+
+
+
+
+                    <p><a href="">更多》</a></p>
+
+
+
+                </h2>
+
+
+
+
+
+
+
+                <ul>
+
+
+
+                                 {volist name="$list" id="v"}
+
+                        <li>
+                          <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">
+           <img src="__PUBLIC__{$v.thumb}"> </a>
+                        <a href="{:url('home/index/productinfo',array('id'=>$v['id'],'catId'=>$v['catid']))}">
+       
+                            {$v.title}
+                       
+                       </a>
+                        </li>
+
+                        {/volist}
+
+
+                </ul>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="show-box alzx">
+
+
+
+                <h2>
+
+
+
+                    案例中心<span>/</span><span>PROJECT CASE</span>
+
+
+
+                    <p><a href="">更多》</a></p>
+
+
+                </h2>
+
+
+
+                <p class="pitch-on"><span class="col-txt" id="pgz">工装</span>|<span id="pjz">家装</span></p>
+
+                    <ul id="pgz-ul" class="alzx">
+
+         {volist name="$options" id="v"}
+                 <!--     <a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}">   -->
+                      	<li>
+                 <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">    <img src="__PUBLIC__{$v.pic}"></a>
+                    <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">  {$v.title}</a>
+
+                        </li>
+                        <!--</a>-->
+     {/volist}
+
+
+                    </ul>
+
+
+                    <ul id="pjz-ul" class="alzx">
+
+
+
+                       
+         {volist name="$options" id="v"}
+
+                 <!--     <a href="{:url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid']))}">   -->
+                      	<li>
+                <img src="__PUBLIC__{$v.pic}">{$v.title}</a>
+
+                        </li>
+                        <!--</a>-->
+     {/volist}
+
+                    </ul>
+
+                <script>
+
+                    $('#pgz').click(function () {
+
+
+
+                        $('#pgz').addClass('col-txt');
+
+
+
+                        $('#pgz-ul').css('display', 'flex');
+
+
+
+
+
+
+
+                        $('#pjz').removeClass('col-txt');
+
+
+
+                        $('#pjz-ul').css('display', 'none');
+
+
+
+                    })
+
+
+
+
+
+
+
+                    $('#pjz').click(function () {
+
+
+
+                        $('#pjz').addClass('col-txt');
+
+
+
+                        $('#pjz-ul').css('display', 'flex');
+
+
+
+
+
+
+
+                        $('#pgz').removeClass('col-txt');
+
+
+
+                        $('#pgz-ul').css('display', 'none');
+
+
+
+                    })
+
+
+
+                </script>
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="show-box">
+
+
+
+                <h2>工艺流程<span>/</span><span>PROCESS FLOW</span></h2>
+
+
+
+
+
+
+
+                <div class="show-img-txt">
+
+
+
+                    <img src="__HOME__/images/shouye_54.png">
+
+
+
+
+
+
+
+                    <p>找线定位 → 核查预埋件与洞口 → 涂刷防腐、防潮涂料 → 龙骨配置与安装 → 安装成品木饰面板。</p>
+
+
+
+
+
+
+
+                    <p>1、找位与划线：木护墙、木筒子板安装前，应根据设计图要求，先找好标高、平面位置、竖向尺寸，进行弹线。</p>
+
+
+
+
+
+
+
+                    <p>2、核预埋件及洞口：弹线后检查预埋件、木砖是否符合设计及安装的需求，主要检查排列间距、尺寸、位置是否满足钉装龙骨的要求；量测门窗及其他洞口位置、尺寸是否方正垂直，与设计要求是否相符。
+
+
+
+                    </p>
+
+
+
+
+
+
+
+                    <p>3、涂刷防潮、防腐涂料：设计有防潮、防腐要求的木护墙、木筒子板，在钉装龙骨时应压铺防潮卷材，或在钉装龙骨前进行涂刷防潮、防腐的施工。</p>
+
+
+
+
+
+
+
+                    <p>4、龙骨的配置与安装...</p>
+
+
+
+
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="show-box xwzx-box">
+
+
+
+            <h2>新闻中心<span>/</span><span>NEWS CENTER</span></h2>
+
+
+
+
+
+
+
+            <ul class="new-list">
+
+
+
+         {volist name="$news" id="v"}
+             <li>
+
+
+                    <p>
+                    	
+                    	   <a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+                    	   	<img src="__HOME__/images/discover.png" />  </a>
+                    	   	<a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+                    	   		{$v.title}</a>
+
+
+                    </p>
+
+
+                    <span>{$v.createtime}</span>
+
+
+                </li>
+   
+     {/volist}
+
+
+            </ul>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    {include file="common/footer"/}    

@@ -1,0 +1,366 @@
+{include file="common/head"/}
+
+        <!-- 中间内容 -->
+
+
+        <div class="centre-box content-box">
+
+
+           {include file="common/left"/}
+
+            <div class="right-box">
+
+                <h3 class="title-link"><a href="/">首页</a>><a href="/services-3.html">产品中心</a>>
+                	<!--<a href="/">柚木饰面板</a>-->
+                	
+                </h3>
+
+
+                <div class="display-box cpxq-box">
+
+
+
+
+
+                    <h4>结构展示<span>/</span><span>STRUCTURE DISPLAY</span></h4>
+
+
+                    <div class="img-txt-box">
+                    <div class="cqxq-left-box">
+
+                            <img src="__PUBLIC__{$info.thumb}" width="348px" height="301px">
+
+                            <div>
+
+                                <img src="__PUBLIC__{$info.thumb}">
+
+
+                                <img src="__HOME__/images/cpxq_08.png">
+
+                                <img src="__HOME__/images/cpxq_10.png">-->
+
+                            </div>
+
+                        </div>
+
+                        <div class="cqxq-txt">
+
+
+                          {$info.jj}
+
+                        </div>
+
+                    </div>
+
+                    <div class="cqxq-js-box">
+
+
+
+
+
+                        <h6>产品介绍</h6>
+
+
+
+
+
+
+
+
+
+
+
+                        <div>
+
+
+
+ {$info.content}
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                    <div class="cqxq-al-box">
+
+
+                        <h6>相关案例</h6>
+
+                        <ul>
+
+
+         {volist name="$options" id="v"}
+
+
+               
+
+                      	<li>
+
+                 <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">   
+
+                 	
+
+                 	<img src="__PUBLIC__{$v.pic}">   </a>               
+
+                 	<a href="{:url('home/index/picture_show',array('id'=>$v['id']))}"> 
+
+                 		  {$v.title}</a>
+                    
+
+                        </li>
+
+                    
+          {/volist}
+
+          
+
+                       </ul>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+  {include file="common/footer1"/}
+
+    </div>
+
+
+    <div class="lds-phone-box">
+
+
+
+  {include file="common/head1"/}
+
+
+
+
+
+
+
+        <script>
+
+
+
+
+
+            var mySwiper = new Swiper('.home-banner', {
+
+
+
+
+
+                direction: 'horizontal', // 垂直切换选项
+
+
+
+
+
+                loop: false, // 循环模式选项
+
+
+
+
+
+                speed: 2000,
+
+
+
+
+
+                // autoplay: {
+
+
+
+
+
+                //     delay: 3000,
+
+
+
+
+
+                //     disableOnInteraction: false,
+
+
+
+
+
+                //     clickable: true,
+
+
+
+
+
+                // },
+
+
+
+
+
+                // // 如果需要分页器
+
+
+
+
+
+                // pagination: {
+
+
+
+
+
+                //     el: '.swiper-pagination',
+
+
+
+
+
+                // },
+
+
+
+
+
+            })
+
+
+            $('#caidan').click(function () {
+
+
+                $('.hid').toggleClass('show');
+
+            })
+
+            $('#nav-but').click(function () {
+
+
+
+
+
+                $('.nav-list').toggleClass('show');
+
+
+
+
+
+            })
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 内容 -->
+
+        <div class="conter-box">
+
+            <div class="show-box pcpxq-box">
+
+              <img src="__PUBLIC__{$info.thumb}" width="348px" height="301px">
+
+                       <img src="__PUBLIC__{$info.thumb}" width="348px" height="301px">
+
+               
+                <div class="cpxq-img">
+
+              <img src="__PUBLIC__{$info.thumb}">
+
+                </div>
+
+                <div class="cpjs-box">
+
+                    {$info.jj}
+
+                </div>
+
+                <div class="cpjs2-box">
+
+                    <h6>产品介绍</h6>
+
+                    <div>
+
+               {$info.content}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="cqxq-al-box">
+
+                <h6>相关案例</h6>
+
+                <ul>
+
+               {volist name="$options" id="v"}
+
+                      	<li>
+
+                 <a href="{:url('home/index/picture_show',array('id'=>$v['id']))}">   
+
+                 	
+
+                 	<img src="__PUBLIC__{$v.pic}">   </a>               
+
+                 	<a href="{:url('home/index/picture_show',array('id'=>$v['id']))}"> 
+
+                 		  {$v.title}</a>
+
+                    
+
+                        </li>
+
+                    
+
+          {/volist}
+
+
+                </ul>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+ {include file="common/footer"/}

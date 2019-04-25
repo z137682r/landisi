@@ -1,0 +1,293 @@
+{include file="common/head"/}
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 中间内容 -->
+
+
+
+
+
+        <div class="centre-box content-box">
+
+
+
+
+
+           {include file="common/left"/}
+
+
+
+
+
+            <div class="right-box">
+
+
+
+
+
+                <h3 class="title-link">新闻中心</h3>
+
+
+
+
+
+
+
+
+
+
+
+                <div class="display-box azjc-box">
+
+
+
+              <h2>
+
+
+
+                     新闻中心<span>/</span><span>News</span>
+
+
+
+                </h2>
+
+
+
+            <ul class="new-list" style="display: block;">
+
+        {volist name="$news" id="v"}
+
+             <li style="width: 100%;">
+
+                    <p style="width: 100%;display: flex;justify-content: space-between;align-items: center;">
+
+                    	   <a href="{:url('home/index/new_show',array('id'=>$v['id']))}" style="width: 75%;display: inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;display: flex;align-items: center;">   
+
+                    	   	<img src="__PUBLIC__{$v.thumb}" style="width: 80px;height:80px;margin: 0 10px 0 0;"/>  
+
+                    	   	
+
+                    	   		{$v.title}</a>
+                                   <span>{$v.createtime}</span>
+                    </p>
+
+
+
+
+
+                    
+
+
+
+
+
+                </li>
+
+   
+
+     {/volist}
+
+            </ul>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        {include file="common/footer1"/}
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="lds-phone-box">
+
+        {include file="common/head1"/}
+
+
+
+        <script>
+
+
+
+            var mySwiper = new Swiper('.home-banner', {
+
+
+
+                direction: 'horizontal', // 垂直切换选项
+
+
+
+                loop: false, // 循环模式选项
+
+
+
+                speed: 2000,
+
+
+
+            })
+
+
+
+
+
+            $('#caidan').click(function () {
+
+
+
+                $('.hid').toggleClass('show');
+
+
+
+            })
+
+
+
+            $('#nav-but').click(function () {
+
+
+
+                $('.nav-list').toggleClass('show');
+
+
+
+            })
+
+
+
+        </script>
+
+
+
+        <!-- 内容 -->
+
+
+
+        <div class="conter-box cpzx-conter-box">
+
+
+
+            <div class="show-box alzx">
+
+
+
+                <h2>
+
+
+
+                     新闻中心<span>/</span><span>News</span>
+
+
+
+                </h2>
+
+
+
+            <ul class="new-list">
+
+        {volist name="$news" id="v"}
+
+             <li>
+
+                    <p>
+
+                    	   <a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+
+                    	   	<img src="__PUBLIC__{$v.thumb}" />  </a>
+
+                    	   	<a href="{:url('home/index/new_show',array('id'=>$v['id']))}">   
+
+                    	   		{$v.title}</a>
+
+                    </p>
+
+
+
+
+
+                    <span>{$v.createtime}</span>
+
+
+
+
+
+                </li>
+
+   
+
+     {/volist}
+
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    {include file="common/footer"/}    

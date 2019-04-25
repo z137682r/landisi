@@ -1,0 +1,139 @@
+{include file="common/head"/}
+
+
+
+        <!-- 中间内容 -->
+
+        <div class="centre-box content-box">
+
+           {include file="common/left"/}
+
+            <div class="right-box">
+
+                     <h3 class="title-link">首页>{$catname}</h3>
+
+
+
+                <div class="display-box azjc-box">
+
+                    <h4>{$info.title}<span></span><span></span></h4>
+
+
+
+                    <div class="azjc-txt">
+
+                        <h3>{$info.title}</h3>
+
+
+
+                        <div>
+
+                        {$info.content}
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+   {include file="common/footer1"/}
+    </div>
+
+
+
+    <div class="lds-phone-box">
+   {include file="common/head1"/}
+
+
+        <script>
+
+            var mySwiper = new Swiper('.home-banner', {
+
+                direction: 'horizontal', // 垂直切换选项
+
+                loop: false, // 循环模式选项
+
+                speed: 2000,
+
+                // autoplay: {
+
+                //     delay: 3000,
+
+                //     disableOnInteraction: false,
+
+                //     clickable: true,
+
+                // },
+
+                // // 如果需要分页器
+
+                // pagination: {
+
+                //     el: '.swiper-pagination',
+
+                // },
+
+            })
+
+
+
+            $('#caidan').click(function () {
+
+                $('.hid').toggleClass('show');
+
+            })
+
+
+
+            $('#nav-but').click(function () {
+
+                $('.nav-list').toggleClass('show');
+
+            })
+
+        </script>
+
+
+
+        <!-- 内容 -->
+
+        <div class="conter-box cpzx-conter-box">
+
+
+
+            <div class="show-box alzx">
+
+                <h2>
+
+                    {$info.title}<span>/</span><span></span>
+
+                </h2>
+
+
+
+                <div class="ty-txt-box">
+
+                    <h3> {$info.title}</h3>
+
+
+
+                    <div>
+{$info.content}
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+    {include file="common/footer"/}    

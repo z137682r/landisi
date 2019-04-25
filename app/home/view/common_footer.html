@@ -1,0 +1,52 @@
+<footer>
+            <div class="footer-nav-list">
+                <ul>
+                    <li>产品分类</li>
+                    <li><a href="{:url('home/index/product',['cz'=>1])}">材质类</a></li>
+                    <li><a href="{:url('home/index/product',['hw'=>1])}">花纹类</a></li>
+                    <li><a href="{:url('home/index/product',['gy'=>1])}">工艺类</a></li>
+                    <li><a href="{:url('home/index/product',['sd'=>1])}">色调类</a></li>
+                </ul>
+                <ul>
+                    <li>专业定制</li>
+                    <li><a href="/about-37.html">常规定制</a></li>
+                    <li><a href="/about-38.html">拿样定制</a></li>
+                </ul>
+                <ul>
+                    <li>招商加盟</li>
+                    <li><a href="/about-32.html">加盟流程</a></li>
+                    <li><a href="/about-33.html">加盟价格</a></li>
+                </ul>
+                <ul>
+                    <li>安装流程</li>
+                    <li><a href="/about-35.html">气钉安装</a></li>
+                    <li><a href="/about-36.html">胶粘法</a></li>
+                </ul>
+                <ul>
+                    <li>售后服务</li>
+                    <li><a href="/about-40.html">免费设计</a></li>
+                    <li><a href="/about-41.html">送货上门</a></li>
+                    <li><a href="/about-42.html">上门量房</a></li>
+                    <li><a href="/about-43.html">指导安装</a></li>
+                </ul>
+                <ul>
+                    <li>国内加盟热线</li>
+                    <li><a href="tel:02883944948">028-83944948</a></li>
+                    <li><a href="tel:17318641860">173-18641860</a></li>
+                    <li><a href="tel:18123381189">181-23381189</a></li>
+                </ul>
+            </div>
+            <div class="line-box"></div>
+            <div class="friend-link">
+                <h4>友情链接</h4>
+                <ul>           {volist name="linkList" id="vo"}                <li><a href="{$vo.url}" rel="external" title="{$vo.name}">{$vo.name}</a></li>                {/volist}
+                </ul>
+                <p>蜀ICP备18021852号 <span>联系邮箱：189450152@qq.com</span></p>
+                <p class="about-us">联系地址：四川省成都市新都区龙桥镇渭水工业园</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://c.mipcdn.com/static/v2/mip.js"></script>
+</body>
+
+</html>

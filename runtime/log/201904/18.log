@@ -1,0 +1,928 @@
+---------------------------------------------------------------
+[ 2019-04-18T14:24:50+08:00 ] 211.149.232.240 125.70.179.99 GET /admin
+[ info ] mj2019.qmdmob.com/admin [运行时间：0.044208s][吞吐率：22.62req/s] [内存消耗：2,191.80kb] [文件加载：43]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:24:50+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/login/index.html
+[ info ] mj2019.qmdmob.com/admin/login/index.html [运行时间：0.036270s][吞吐率：27.57req/s] [内存消耗：2,128.28kb] [文件加载：42]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Login.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:24:50+08:00 ] 211.149.232.240 125.70.179.99 GET /captcha.html
+[ info ] mj2019.qmdmob.com/captcha.html [运行时间：0.039912s][吞吐率：25.06req/s] [内存消耗：1,733.55kb] [文件加载：32]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/wwwroot/mj2019.qmdmob.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:24:59+08:00 ] 211.149.232.240 125.70.179.99 GET /captcha.html?id=0.5354705446776409
+[ info ] mj2019.qmdmob.com/captcha.html?id=0.5354705446776409 [运行时间：0.061494s][吞吐率：16.26req/s] [内存消耗：1,733.77kb] [文件加载：32]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/wwwroot/mj2019.qmdmob.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:00+08:00 ] 211.149.232.240 125.70.179.99 GET /captcha.html?id=0.5354705446776409?id=0.5013226723169961
+[ info ] mj2019.qmdmob.com/captcha.html?id=0.5354705446776409?id=0.5013226723169961 [运行时间：0.046088s][吞吐率：21.70req/s] [内存消耗：1,733.72kb] [文件加载：32]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /home/wwwroot/mj2019.qmdmob.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:04+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/login/index.html
+[ info ] mj2019.qmdmob.com/admin/login/index.html [运行时间：0.077800s][吞吐率：12.85req/s] [内存消耗：3,605.88kb] [文件加载：51]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '43',
+  'accept' => '*/*',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => '62jt',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.002699s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000788s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:05+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/index/index.html
+[ info ] mj2019.qmdmob.com/admin/index/index.html [运行时间：0.071790s][吞吐率：13.93req/s] [内存消耗：3,396.36kb] [文件加载：57]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Index.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/index/index.html [ array (
+  0 => 'menus',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_auth_rule` [ RunTime:0.002117s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_auth_rule` WHERE  (  menustatus=1 ) ORDER BY `sort` [ RunTime:0.000934s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:05+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/index/main.html
+[ info ] mj2019.qmdmob.com/admin/index/main.html [运行时间：0.066615s][吞吐率：15.01req/s] [内存消耗：2,457.76kb] [文件加载：50]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/index/main.html [ array (
+  0 => 'config',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000830s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000492s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:07+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/Category/index.html
+[ info ] mj2019.qmdmob.com/admin/Category/index.html [运行时间：0.062317s][吞吐率：16.05req/s] [内存消耗：3,272.53kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Category',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Category->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Category.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/category/index.html [ array (
+  0 => 'module',
+  1 => 'categorys',
+  2 => 'title',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:12+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/Message/index.html
+[ info ] mj2019.qmdmob.com/admin/Message/index.html [运行时间：0.050870s][吞吐率：19.66req/s] [内存消耗：2,248.91kb] [文件加载：47]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Message',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Message->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Message.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/message/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:12+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/message/index.html
+[ info ] mj2019.qmdmob.com/admin/message/index.html [运行时间：0.072167s][吞吐率：13.86req/s] [内存消耗：3,336.63kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'message',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/Message/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Message->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Message.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000661s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_message` [ RunTime:0.002180s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_message` WHERE  ( `name` LIKE '%%' OR `tel` LIKE '%%' OR `content` LIKE '%%' ) LIMIT 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_message` WHERE  ( `name` LIKE '%%' OR `tel` LIKE '%%' OR `content` LIKE '%%' ) ORDER BY addtime desc LIMIT 0,10 [ RunTime:0.000607s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:16+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/Database/database.html
+[ info ] mj2019.qmdmob.com/admin/Database/database.html [运行时间：0.073331s][吞吐率：13.64req/s] [内存消耗：3,222.02kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Database',
+    2 => 'database',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->database[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Database.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/database/database.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:16+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/database/database.html
+[ info ] mj2019.qmdmob.com/admin/database/database.html [运行时间：0.066107s][吞吐率：15.13req/s] [内存消耗：3,253.47kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'database',
+    2 => 'database',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/Database/database.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Database->database[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Database.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000957s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE '%' [ RunTime:0.010220s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:20+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/Module/index.html
+[ info ] mj2019.qmdmob.com/admin/Module/index.html [运行时间：0.090262s][吞吐率：11.08req/s] [内存消耗：3,282.33kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Module.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/module/index.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:20+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/module/index.html
+[ info ] mj2019.qmdmob.com/admin/module/index.html [运行时间：0.080366s][吞吐率：12.44req/s] [内存消耗：3,459.52kb] [文件加载：56]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/Module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->index[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_module` [ RunTime:0.003403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `clt_module` LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_module` ORDER BY listorder desc LIMIT 0,10 [ RunTime:0.000840s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:25:22+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/module/field.html?id=1
+[ info ] mj2019.qmdmob.com/admin/module/field.html?id=1 [运行时间：0.129059s][吞吐率：7.75req/s] [内存消耗：3,283.41kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/Module/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Module.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/module/field.html [ array (
+  0 => 'pattern',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:25:22+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/module/field.html
+[ info ] mj2019.qmdmob.com/admin/module/field.html [运行时间：0.065761s][吞吐率：15.21req/s] [内存消耗：3,330.99kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'module',
+    2 => 'field',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/module/field.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+  'id' => '1',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Module->field[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Module.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_field` [ RunTime:0.001937s ]
+[ sql ] [ SQL ] SELECT * FROM `clt_field` WHERE  (  moduleid=1 ) ORDER BY listorder asc,id asc [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:34:18+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/System/system.html
+[ info ] mj2019.qmdmob.com/admin/System/system.html [运行时间：0.054748s][吞吐率：18.27req/s] [内存消耗：3,242.89kb] [文件加载：54]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'System',
+    2 => 'system',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\System->system[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/System.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/system/system.html [ array (
+  0 => 'system',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_system` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`url`,`title`,`key`,`des`,`bah`,`copyright`,`ads`,`tel`,`email`,`logo` FROM `clt_system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000527s ]
+---------------------------------------------------------------
+[ 2019-04-18T14:34:35+08:00 ] 211.149.232.240 125.70.179.99 GET /admin/Auth/adminList.html
+[ info ] mj2019.qmdmob.com/admin/Auth/adminList.html [运行时间：0.059418s][吞吐率：16.83req/s] [内存消耗：2,348.27kb] [文件加载：48]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Auth',
+    2 => 'adminList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'referer' => 'http://mj2019.qmdmob.com/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'skin=0; PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->adminList[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Auth.php ]
+[ info ] [ VIEW ] /home/wwwroot/mj2019.qmdmob.com/app/admin/view/auth/adminList.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T14:34:35+08:00 ] 211.149.232.240 125.70.179.99 POST /admin/auth/adminList.html
+[ info ] mj2019.qmdmob.com/admin/auth/adminList.html [运行时间：0.069050s][吞吐率：14.48req/s] [内存消耗：3,243.86kb] [文件加载：53]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'adminList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://mj2019.qmdmob.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://mj2019.qmdmob.com/admin/Auth/adminList.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=tanhs0q44qnvrpsuc2aefj7tr4; skin=0',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'limit' => '10',
+)
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/app/admin/lang/zh-cn.php
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->adminList[ /home/wwwroot/mj2019.qmdmob.com/app/admin/controller/Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002965s ] mysql:dbname=mj2019;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `clt_admin` [ RunTime:0.003224s ]
+[ sql ] [ SQL ] SELECT `a`.*,`ag`.`title` FROM `clt_admin` `a` LEFT JOIN `clt_auth_group` `ag` ON `a`.`group_id`=`ag`.`group_id` [ RunTime:0.001337s ]
+---------------------------------------------------------------
+[ 2019-04-18T18:09:45+08:00 ] 211.149.232.240 183.223.222.107 GET /favicon.ico
+[ info ] mj2019.qmdmob.com/favicon.ico [运行时间：0.038310s][吞吐率：26.10req/s] [内存消耗：1,723.13kb] [文件加载：33]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1675e23c5dbe9-05637b73913dc7-454c092b-1fa400-1675e23c5dc3de; GUID=5d642cae-dd16-4383-9a40-0e773aa628cb; vct=7; vt_origin=300; vt_origin_url=http%3A//test2018.qmdmob.com/jingpinanli/; vt_url=http%3A//test2018.qmdmob.com/',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T18:30:44+08:00 ] 211.149.232.240 183.223.222.107 GET /favicon.ico
+[ info ] mj2019.qmdmob.com/favicon.ico [运行时间：0.061346s][吞吐率：16.30req/s] [内存消耗：1,723.13kb] [文件加载：33]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1675e23c5dbe9-05637b73913dc7-454c092b-1fa400-1675e23c5dc3de; GUID=5d642cae-dd16-4383-9a40-0e773aa628cb; vct=7; vt_origin=300; vt_origin_url=http%3A//test2018.qmdmob.com/jingpinanli/; vt_url=http%3A//test2018.qmdmob.com/',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-18T18:46:51+08:00 ] 211.149.232.240 183.223.222.107 GET /favicon.ico
+[ info ] mj2019.qmdmob.com/favicon.ico [运行时间：0.031675s][吞吐率：31.57req/s] [内存消耗：1,723.13kb] [文件加载：33]
+[ info ] [ LANG ] /home/wwwroot/mj2019.qmdmob.com/think/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mj2019.qmdmob.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'UM_distinctid=1675e23c5dbe9-05637b73913dc7-454c092b-1fa400-1675e23c5dc3de; GUID=5d642cae-dd16-4383-9a40-0e773aa628cb; vct=7; vt_origin=300; vt_origin_url=http%3A//test2018.qmdmob.com/jingpinanli/; vt_url=http%3A//test2018.qmdmob.com/',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,54 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit" ng-app="hd" ng-controller="ctrl">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <form action="" method="post" class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+            <label class="layui-form-label">上级目录</label>
+            <div class="layui-input-inline">
+                <select name="pid" lay-filter="aihao">
+                    <option value="0">顶级</option>
+                    {volist name="navigationList" id="vo"}
+                    <option value="{$vo.id}"{:isset($info.pid) && $info.pid == $vo.id?'selected':''}>{$vo.name}</option>
+                    {/volist}
+                </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">网页名称</label>
+            <div class="layui-input-inline">
+                <input type="text" name="name" ng-model="field.name" value="{$info.name??''}" lay-verify="required" placeholder="{:lang('pleaseEnter')}网页名称" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">网页链接</label>
+            <div class="layui-input-4">
+                <input type="text" name="url" ng-model="field.url" value="{$info.url??''}" lay-verify="required" placeholder="{:lang('pleaseEnter')}网页链接" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">是否显示</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="是"{:isset($info.status) && $info.status == 1?'checked':''} >
+                <input type="radio" name="status" value="0" title="否"{:isset($info.status) && $info.status == 0?'checked':''}>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">{:lang('order')}</label>
+            <div class="layui-input-4">
+                <input type="text" name="sort" ng-model="field.sort"  value="{$info.sort??''}" placeholder="从小到大排序" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn" lay-submit="" lay-filter="submit">{:lang('submit')}</button>
+                <a href="{:url('index')}" class="layui-btn layui-btn-primary">{:lang('back')}</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script>
+    layui.use('form',function(){})
+</script>
